@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #070b12;
+  color: white;
+}
+
+header {
+  background: #0b1019;
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222b3a;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff203f;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#search {
+  background: #151d2a;
+  border: 1px solid #303b4d;
+  border-radius: 20px;
+  padding: 10px 14px;
+  color: white;
+  outline: none;
+}
+
+main {
+  padding: 35px 6%;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.hero {
+  padding: 55px 30px;
+  border-radius: 15px;
+  background: linear-gradient(120deg, #3b0c18, #101b2c);
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #c4cad4;
+  margin-bottom: 20px;
+}
+
+button,
+.btn {
+  border: none;
+  background: #ff203f;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.movie-card {
+  background: #111925;
+  border: 1px solid #263143;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-card h3,
+.movie-card p {
+  padding: 8px 12px 0;
+}
+
+.movie-card p {
+  color: #929baa;
+  font-size: 13px;
+}
+
+.movie-card .btn {
+  display: inline-block;
+  margin: 12px 4px 0 12px;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  background: #0b1019;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #search {
+    width: 140px;
+  }
+
+  main {
+    padding: 25px 15px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .movie-card img {
+    height: 210px;
+  }
+}
